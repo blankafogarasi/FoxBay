@@ -4,7 +4,7 @@ import { userValidation } from './validation/validation';
 
 export const registrationService = {
   async insertNewUser(username, firstName, lastName, password,  email, profileImg) {
-    await this.userValidation(username, firstName, lastName, password,  email);
+    await this.validateUser(username, firstName, lastName, password,  email);
     await this.checkUniqueValues(username, email);
     const hashedPassword = hashPassword(password, 10);
     await usersRepo.insertNewUser(username, firstName, lastName, hashedPassword, email, profileImg);
@@ -13,7 +13,7 @@ export const registrationService = {
     };
   },
 
-  async userValidation(username, firstName, lastName, password,  email) {
+  async validateUser(username, firstName, lastName, password,  email) {
       let userData = {username, firstName, lastName, password,  email};
       const { error } = userValidation(userData);
       if (error) throw { message: `${error.details[0].message}`, status: 400 };
