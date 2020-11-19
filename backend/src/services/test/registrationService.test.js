@@ -143,4 +143,4 @@ test('password is too short', async () => {
       thrownError = err;
     }
     expect(thrownError).toEqual({ message: "\"password\" length must be at least 8 characters long", status: 400 });
-  });
+  }); 

@@ -14,6 +14,6 @@ router.use(express.json());
 
 router.post('/users', registrationController.post);
 router.post('/login', loginController.post);
-router.use(authHandler);
+// router.use(authHandler);
 
 export default router;
