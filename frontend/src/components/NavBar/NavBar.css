@@ -1,0 +1,82 @@
+.navBar {
+    width: 99vw;
+    display: flex;
+    height: 12vh;
+    font-family: 'Lora', serif;
+    padding: 0.5rem;
+  }
+
+  .navBarTitle {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 7vh;
+    font-size: 1.2rem;
+    border-bottom: 1px solid  rgb(94, 233, 243);
+  } 
+
+  .navBarTitle h1 {
+    font-weight: 700;
+    padding: 0.5rem 0.5rem;
+    color: rgb(79, 78, 78);
+  }
+
+  .navBarMenu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+    border-bottom: linear-gradient(to right,rgb(75, 247, 244) 50%, #ffffff 1px);
+    /*background-image: linear-gradient(to right, rgb(75, 247, 244) 1px, #ffffff 1px), linear-gradient(to left,rgb(75, 247, 244) 1px, #ffffff 1px);
+	background-position: bottom;
+	background-size: 100% 25px;
+	background-repeat: no-repeat;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid red;*/
+  }
+
+  .navBarMenu div {
+    color:rgb(79, 78, 78);
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: 700;
+  }
+
+
+  .navBarLogos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+    color: rgb(79, 78, 78);
+    margin-right: 1rem;
+  }
+
+  .navBar .fa-user-circle, .navBar .fa-plus-circle, .navBar .fa-shopping-cart {
+    padding: 1.2rem 1.2rem;
+    color: rgb(79, 78, 78);
+    cursor: pointer;
+  }
+
+  .navBar .fa-user-circle:hover, .navBar .fa-plus-circle:hover, .navBar .fa-shopping-cart:hover {
+    color: rgb(241, 54, 116);
+  }
+
+  .navBarUserMenu {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Lora', serif;
+  }
+
+  .navBarUserMenuVisitor div, .navBarUserMenuCustomer div {
+    color:rgb(79, 78, 78);
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: 700;
+  }
+
+  .navBarUserMenuVisitor div:hover, .navBarUserMenuCustomer div:hover {
+    color: rgb(241, 54, 116);
+  }
